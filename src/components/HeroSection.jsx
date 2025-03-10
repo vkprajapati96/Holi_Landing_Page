@@ -1,5 +1,6 @@
+import React from 'react'
 import  "./Hero.css"
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 const images = [
     "https://i.pinimg.com/736x/3e/ab/21/3eab214c1f4dcbd2feac3a6a5dafce4f.jpg",
@@ -10,8 +11,9 @@ const images = [
 ];
 
 
-function Hero() {
 
+function HeroSection() {
+  
   const [current, setCurrent] = useState(0);
 
   function nextSlide() {
@@ -64,7 +66,4 @@ function Hero() {
 )
 }
 
-export default Hero
-
-
-
+export default HeroSection

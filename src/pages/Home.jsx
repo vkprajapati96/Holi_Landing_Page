@@ -1,16 +1,18 @@
 import React from 'react'
-import Hero from '../components/Hero'
 import About from '../components/About'
 import Products from '../components/Products'
 import Testimonial from '../components/Testimonial'
+import HeroSection from '../components/HeroSection'
+
 
 function Home() {
   return (
     <div>
-<Hero/>
+<HeroSection/>
 <About/>
 <Products/>
 <Testimonial/>
+
     </div>
   )
 }
