@@ -1,0 +1,69 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+}
+
+.about .about-logo {
+text-align: center;
+display: flex;
+flex-direction: column;
+gap: 2rem;
+
+}
+.about .about-logo h1{
+    background: var(--my-gradient-second);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.about-cards{
+/* border: 1px solid; */
+display: flex;
+gap: 2rem;
+
+}
+
+.about-cards .about-img{
+width: 350px;
+height: 420px;
+border-radius: 10px;
+
+}
+.about-cards .about-img img{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.about-description {
+    background-color: #fff;
+    /* border: 1px solid red; */
+    border-radius: 8px;
+    padding: 10px 15px 0 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  
+  .about-description h2 {
+    margin-top: 0;
+    /* color: #333; */
+    background: var(--my-gradient-second);
+    -webkit-background-clip: text;
+    color: transparent;
+
+  }
+  
+  .about-description p {
+    padding-top: 10px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4rem;
+  }
+
+  
