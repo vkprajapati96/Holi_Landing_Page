@@ -124,3 +124,34 @@ color: transparent;
 background-color: blue;
 color: white;
 }
+
+
+@media (max-width:991px) {
+    .product-cards {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+        gap: 2rem;
+        /* border: 1px solid; */
+        /* width: 100%; */
+    }
+
+}
+@media (max-width:767px) {
+    .product-heading p {
+        font-size: 14px;
+    }
+
+}
+
+
+@media (max-width:579px) {
+    .product-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+        gap: 1rem;
+        /* border: 1px solid; */
+        /* width: 100%; */
+    }
+}

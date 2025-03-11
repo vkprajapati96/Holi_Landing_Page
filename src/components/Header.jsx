@@ -8,8 +8,8 @@ import { HashLink } from "react-router-hash-link";
 function Header() {
   return (
     <>
-    <section className='wrapper'>
-    <header>
+    <section className='header-container '>
+    <header className='wrapper'>
         <div className='holi-logo'><Link to="/">HOLI WORLD</Link> </div>
         <div className='holi-navigatiion'>
             <ul>
@@ -17,7 +17,7 @@ function Header() {
         <li><HashLink smooth to="#about">About Us</HashLink></li>
         <li><HashLink smooth to="#product">Products</HashLink></li>
         <li><HashLink smooth to="#testimonials">Testimonials</HashLink></li>
-        <li><HashLink smooth to="#contact">Contact Us</HashLink></li>
+        <li><Link  to="/cart">Cart</Link></li>
         <li className='menu'><i class="ri-menu-line"></i></li>
 
     

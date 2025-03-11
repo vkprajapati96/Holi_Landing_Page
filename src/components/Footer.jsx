@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Footer.css"
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -7,7 +8,7 @@ function Footer() {
      <footer>
       <div className="wrapper  footer-main">
         <div className="footer-heading">
-          <h2>HOLI WORLD</h2>
+          <Link to="/">HOLI WORLD</Link>
           <p>
           
     Coptright © 2025 Holi World Agency Ltd.<br/>

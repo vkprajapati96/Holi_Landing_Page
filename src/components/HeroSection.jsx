@@ -11,7 +11,6 @@ const images = [
 ];
 
 
-
 function HeroSection() {
   
   const [current, setCurrent] = useState(0);
@@ -31,6 +30,9 @@ function HeroSection() {
                       <path  d="M15.75 19.5L8.25 12l7.5-7.5" />
                   </svg>
               </div>
+              <div>
+                
+             
               {images.map(
                   (image, index) =>
                       current === index && (
@@ -40,6 +42,7 @@ function HeroSection() {
                       )
               )}
               
+               </div>
               <div className="right-arrow" onClick={nextSlide}>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"  stroke="currentColor" class="w-6 h-6">
                       <path  d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -47,10 +50,11 @@ function HeroSection() {
               </div>
               
 
-          </div>
+    </div>
+    
           <div className="text">
   <h1 >
-    Celebrate the Vibrance of Holi!
+    Celebrate the <br /> Vibrance of Holi!
   </h1>
   <p >
     Dive into the festival of colors with our exclusive collection.
