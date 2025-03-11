@@ -1,0 +1,173 @@
+
+.caro{
+    /* border: 2px solid red; */
+    margin-top: 4.21rem;
+}
+.slick-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .slick-prev {
+    z-index: 1000;
+    left: 30px;
+ }
+    .slick-next{
+        z-index: 1000;
+        right: 34px;
+    }
+  
+  
+   .slider {
+      display: flex;
+      margin-top: 4.2rem;
+      position: relative;
+    }
+
+    .image{
+        position: relative;
+        height: 560px;
+
+    }
+    .image img{
+width: 100%;
+height: 100%;     
+background-repeat: no-repeat;
+background-position: center;
+object-fit: cover;   
+
+    }
+
+    br{
+        display: none;
+    }
+     .text{
+        text-align: center;
+        width: 80%;
+         /* padding: 50px; */
+        /* border: 1px solid red; */
+        position: absolute;
+        transform: translate(-50%);
+        top: 20%;
+        left: 50%;
+        /* z-index: 999; */
+        
+      }
+       .text h1{
+        /* z-index: 999; */
+      font-size: 3.5rem;
+      background: var(--my-gradient);
+      color: transparent;
+      -webkit-background-clip: text;
+       /* color: #e91e63; */
+        margin-bottom: 20px;
+      }
+      
+       .text p{
+        /* z-index: 999; */
+        font-size: 15px; 
+        margin-bottom:30px; 
+        color: white;
+        font-weight: 500;
+        line-height: 1.1;
+      }
+      
+      
+       .text button{
+            background: #ff9800;
+            color: white;
+            padding: 12px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+          
+      }
+      
+      
+      /* section responsiveness  */
+      
+      @media (max-width:1199px){
+     
+         .text h1 {
+          font-size: 3rem;
+      }
+        
+      }
+      
+      @media (max-width:991px){
+        br{
+            display: block;
+        }
+        .image{
+            height: 460px;
+        }
+
+        .text h1{
+          font-size: 3rem;
+          }
+          
+           .text p{
+            font-size: 14px; 
+          }
+          
+          
+           .text button{
+                background: #ff9800;
+                color: white;
+                padding: 12px 15px;
+                font-size: 1rem;
+                border: none;
+                border-radius: 8px;
+                font-weight: 600;
+                cursor: pointer;
+              
+          }
+         
+      
+      }
+      @media (max-width:767px){
+     
+         .text h1 {
+          font-size: 3rem;
+
+      }
+      .text button{
+        padding: 12px 12px;
+        font-size: 1rem;
+      
+  }
+      
+       
+      }
+      
+      @media (max-width:579px){
+        .image{
+            height: 380px;
+    
+        }
+         .text h1 {
+            font-size: 2rem;
+        } 
+
+        .text p{
+            display: none;
+          }
+          .text button{
+            padding: 10px 10px;
+            font-size: 14px;
+          
+      }
+    
+      }
+      
+      @media  (min-width:320px) and (max-width:424px){
+        .text button{
+            padding:8px 8px;
+            font-size: 12px;
+          
+      }
+       
+      }
+      
