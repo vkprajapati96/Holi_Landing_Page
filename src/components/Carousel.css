@@ -144,7 +144,7 @@ object-fit: cover;
       
       @media (max-width:579px){
         .image{
-            height: 380px;
+            /* height: 480px; */
     
         }
          .text h1 {
