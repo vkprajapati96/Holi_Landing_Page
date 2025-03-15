@@ -1,24 +1,51 @@
 
-.cart-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin:8rem 0 0 0;
-}
 
 .cart-container {
+
   display: flex;
+  /* grid-template-columns: repeat(2,1fr); */
+  /* grid-template-rows: repeat(2,1fr); */
+  justify-content: space-between;
+  /* gap: 2rem; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  margin-top:5rem;
+  /* border: 1px solid red; */
+  
+}
+
+.cart-card{
+  gap: 1rem;
+  margin-top: 1rem;
+  /* border: 1px solid; */
+  border-radius: 8px;
+  align-items: center;
+  display: flex;
+  background-color: #f0f0f0;
+}
+.cart-container {
+/* 
+  border: 1px solid red;
+  display: flex;
+flex-direction: column;
   gap: 2rem;
   align-items: center;
   background: #FAFAFA;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
 }
-
+.cart-image{
+  width: 200px;
+  height: 200px;
+  padding: 12px;
+  border-radius: 30px;
+}
 .cart-image img {
-  width: 250px;
-  height: 250px;
+  height: 100%;
+  width: 100%;
+  /* border-radius: 30px; */
+  
   object-fit: cover;
   border-radius: 10px;
 }
@@ -29,21 +56,39 @@
   gap: 1rem;
 }
 
+.cart-details h3 {
+  font-size: 14px;
+}
+.cart-details h4 {
+  font-size: 14px;
+}
+.cart-details p {
+  font-size: 12px;
+}
+
+
 .cart-counter {
+  /* border: 1px solid; */
   display: flex;
   align-items: center;
   gap: 1rem;
   font-size: 18px;
 }
 
+.cart-counter span {
+  font-size: 14px;
+}
+
 .counter-btn {
-  padding: 8px 14px;
+  padding: 6px 12px;
+  font-weight: 600;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
   background: #ddd;
 }
+
 
 .cart-actions {
   display: flex;
@@ -67,6 +112,43 @@
   border-radius: 4px;
   cursor: pointer;
 }
+
+.Total-Price{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+margin-top: 1rem;
+  padding: 2rem;
+  background-color: #f0f0f0;
+  border: 1px solid ;
+  height: 200px;
+  width: 300px;
+}
+.Total-Price h4{
+font-size: 14px;
+} 
+
+.Total-Price button{
+  color: white;
+  font-weight: 600;
+  width: 100px;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+ background-color: #ff9800;
+
+}
+
+.cart-details .cart-btn{
+  color: white;
+  font-weight: 600;
+  width: 100px;
+  border: none;
+  padding: 6px 8px;
+  border-radius: 5px;
+ background-color:blue;
+ }
+
 
 @media (max-width: 768px) {
   .cart-container {

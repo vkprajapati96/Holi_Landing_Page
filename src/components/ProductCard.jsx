@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "../Feature/ContextProivder";
 
-const ProductCard = ({ image, name, price, description }) => {
+const ProductCard = ({ image, name, price, description,quantity }) => {
+  const {dispatch} =useContext(CartContext)
   return (
     <div className="product-card">
       <img src={image} alt={name} />
@@ -12,9 +15,12 @@ const ProductCard = ({ image, name, price, description }) => {
       </div>
       <div className="product-btns">
         <button className="buy-btn">Buy Now</button>
-        <Link to="/cart">
-          <button className="cart-btn">Add to Cart</button>
-        </Link>
+        <button  className="cart-btn" 
+          onClick={()=>dispatch({type:"Add",
+            product: { image, name, price, description,quantity },
+          })}
+          >Add to Cart</button>
+          
       </div>
     </div>
   );

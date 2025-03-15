@@ -1,13 +1,16 @@
 /* header style Started  */
 
-/* header{ */
-/* display: flex; */
-/* justify-content: space-between; */
+.sidebar{
+    display: none;
+}
+header{
+display: flex;
+justify-content: space-between;
 /* align-items: center; */
 /* border: 1px solid; */
 /* padding: 10px 0; */
 /* position: sticky; */
-/* } */
+}
 
 .header-container{
 background: #f0f0f0;
@@ -64,10 +67,32 @@ header .holi-navigatiion ul li a{
     color:#000;
     font-weight:500;
 }
+
 header .holi-navigatiion ul .menu {
     display: none;
     font-size: 2rem;
 }
+header .holi-navigatiion ul li #cart{
+    font-size: 22px;
+    color:transparent;
+    background:var(--my-gradient-second);
+    -webkit-background-clip: text;
+    position: relative;
+
+}
+
+header .holi-navigatiion ul li span{
+position: absolute;
+top: 20%;
+/* background:var(--my-gradient-sec); */
+color:red;
+font-weight: 600;
+/* -webkit-background-clip: text; */
+/* color:transparent; */
+
+}
+
+
 
 header .holi-navigatiion form{
     /* display: flex; */
@@ -99,7 +124,6 @@ header .holi-navigatiion form button{
     color: transparent;
     
     
-    
 }
 /* header style Ended  */
 
@@ -114,6 +138,58 @@ header .holi-navigatiion form button{
 }
 
 @media (max-width:767px){
+    .sidebar{
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -250px; 
+        width: 250px;
+        height: 100vh;
+        background:#f0f0f0;
+        transition: right 0.3s ease;
+        padding: 15px;
+        z-index: 1001;
+    
+    }
+   
+    .sidebar ul .list{
+        color: transparent;
+        background: var(--my-gradient);
+        -webkit-background-clip: text;
+        font-size: 16px;
+        padding-top: 2rem;
+        display: block;
+    
+    }
+     
+      
+      .menu {
+        cursor: pointer;
+        font-size: 24px;
+      }
+      
+      
+      .sidebar.show {
+        right: 0;
+      }
+      
+      .close-btn {
+        border: none;
+        font-size: 24px;
+        color: black;
+        cursor: pointer;
+        display: block;
+        margin-left: auto;
+      }
+
+      header .holi-navigatiion ul {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        /* flex-direction: column-reverse; */
+    }
+
+      
     header .holi-navigatiion ul li{
         display: none;
     }
@@ -122,11 +198,17 @@ header .holi-navigatiion form button{
         display: block;
     }
 
+
+
     header .holi-logo a {
     font-size: 26px;
 }
-    
+
+
 }
+
+
+
 
 
 @media (max-width:425px){

@@ -10,6 +10,7 @@ function Products() {
       name: "Pichkarie",
       price: "2.00",
       description: "Experience a burst of vibrant colors with every spray of our precision-engineered pichkari.",
+    quantity:1
     },
     {
       id: 2,
@@ -17,13 +18,15 @@ function Products() {
       name: "Colors",
       price: "5.00",
       description: "Experience a burst of vibrant colors with every spray of our precision-engineered pichkari.",
+      quantity:1
     },
     {
       id: 3,
       image: "https://i.pinimg.com/236x/c4/89/5b/c4895b78acf761affda7f56dca4ffd25.jpg",
-      name: "Ballons",
+      name: "Balloons",
       price: "6.00",
       description: "Experience a burst of vibrant colors with every spray of our precision-engineered pichkari.",
+      quantity:1
     },
     {
       id: 4,
@@ -31,6 +34,7 @@ function Products() {
       name: "Sweets",
       price: "10.00",
       description: "Experience a burst of vibrant colors with every spray of our precision-engineered pichkari.",
+      quantity:1
     },
     {
       id: 5,
@@ -38,6 +42,7 @@ function Products() {
       name: "T-Shirts",
       price: "12.00",
       description: "Experience a burst of vibrant colors with every spray of our precision-engineered pichkari.",
+      quantity:1
     },
     {
       id: 6,
@@ -45,6 +50,7 @@ function Products() {
       name: "Items",
       price: "5.00",
       description: "Experience a burst of vibrant colors with every spray of our precision-engineered pichkari.",
+      quantity:1
     },
     
   ];
@@ -69,6 +75,7 @@ function Products() {
               name={product.name}
               price={product.price}
               description={product.description}
+              quantity={product.quantity}
             />
           ))}
         </div>
